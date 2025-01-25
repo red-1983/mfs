@@ -1,0 +1,45 @@
+:root {
+    --size-button:70px;
+    --color-button:rgba(255, 255, 255, 0.4);
+}
+.isDesktop {
+position:relative;
+width:90%;
+height: auto;
+margin:0 auto;
+& button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+& button span {
+    position: relative;
+    width:20px;
+    height:3px;
+    background-color: #000;
+
+ 
+}
+& .button_left {
+    position: absolute;
+    top:50%;
+    left:calc(var(--size-button) / 2);
+    width:var(--size-button);
+    height: var(--size-button);
+    background-color: var(--color-button);
+    border-color: var(--color-button);
+    border-radius: 50%;
+}
+& .button_right {
+    position: absolute;
+    top:50%;
+    right:calc(var(--size-button) / 2);
+    width:var(--size-button);
+    height: var(--size-button);
+    background-color: var(--color-button);
+    border-color: var(--color-button);
+    border-radius: 50%;
+}
+
+
+}

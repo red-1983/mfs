@@ -1,0 +1,9 @@
+.isDesktop {
+  & div{
+    max-width: 1420px;
+    & p{
+      max-width: 700px;
+    }
+
+  }  
+}

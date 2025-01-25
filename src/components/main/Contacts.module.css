@@ -1,0 +1,53 @@
+.isDesktop, .isLaptop{
+   margin-top: 100px;
+   margin-bottom:30px;
+   
+   &>.title {
+    margin-bottom: 60px;
+    margin-left:50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+& .container_contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-bottom: 50px;
+    padding:0 50px;
+    
+    
+    & .list li a {
+        color:#000;
+    }
+
+    & img {
+        width:500px;
+        height: auto;
+    }
+  
+}
+& .container_form{
+    margin:0 auto;
+    display: flex;
+    max-width: 1410px;
+    min-height: 746px;
+    justify-content: space-between;
+    align-items: center;
+}
+& .map {
+    border:none;
+    width: 690px;
+    height: 690px;
+    allow:fullscreen;
+   }
+
+}
+.isLaptop {
+  font-size: 16px; 
+  & .map {
+    border:none;
+    width: 450px;
+    height: 450px;
+}   
+}

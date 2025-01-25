@@ -1,0 +1,121 @@
+.button{
+    margin: 0;
+    padding: 0;
+    position:relative;
+    width:70px;
+    height:70px;
+    border:none;
+    background-color: inherit;
+    cursor:pointer;
+   
+    
+
+}
+
+.button::before{
+    position:absolute;
+    content:'';
+    width:60px;
+    height:6px;
+    top:15px;
+    left:5px;
+    background-color: black;
+    box-shadow: 0 15px black;
+           
+    
+}
+.button::after{
+    position:absolute;
+    content:'';
+    width:60px;
+    height:6px;
+    top:45px;
+    left:5px;
+    background-color: black;
+   
+    
+}
+.open.button::before{
+    animation-name: disappear, rotateRight;
+    animation-duration: 0.5s,2s;
+    animation-fill-mode: forwards;
+}
+@keyframes disappear{
+to {
+    box-shadow: 0 15px transparent;
+}
+}
+
+
+@keyframes rotateRight{
+to {
+    transform:  rotate(45deg);
+    width:50px;
+    top:30px;
+    left:10px;
+}
+}
+.open.button::after{
+    animation-name: rotateLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes rotateLeft{
+to {
+    transform:  rotate(-45deg);
+    width:50px;
+    top:30px;
+    left:10px;
+}
+}
+.close.button::before{
+    animation-name: antidisappear, antirotateRight;
+    animation-duration: 2s,2s;
+    animation-fill-mode: forwards;
+}   
+
+@keyframes antirotateRight{
+    from{
+        transform:  rotate(45deg);
+        width:50px;
+        top:30px;
+        left:10px;
+    }
+    to {
+        transform:  rotate(0deg);
+        width:60px;
+        top:15px;
+        left:5px;
+    }
+    }
+    @keyframes antidisappear{
+        0%{
+           box-shadow: 0 15px transparent; 
+        }
+        50%{
+            box-shadow: 0 15px transparent; 
+         }
+        100% {
+            box-shadow: 0 15px #000 
+        }
+        }
+
+.close.button::after{
+    animation-name: antirotateLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes antirotateLeft{
+    from {
+        transform:  rotate(-45deg);
+        width:50px;
+        top:30px;
+        left:10px;
+    }
+    to {
+        transform:  rotate(0deg);
+        width:60px;
+        top:45px;
+        left:5px;
+    }
+}

@@ -1,0 +1,98 @@
+.isDesktop, .isLaptop,.isTablet, .isMobile {
+    width: 690px;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px; 
+    & .title {
+        margin-bottom: 50px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+      
+    & label{
+        display: inline-block;
+        font-size: 14px;
+        
+      & .required {
+        display:  inline-block;
+        margin-left: 5px;
+            color:#C30101;
+        }
+    }
+    & input {
+        width:100%;
+        min-height: 60px;
+        background-color: #E5E5E5;
+        border-radius: 5px;
+        border: 1px solid #E5E5E5;
+        margin-top: 10px;
+        font-size: 18px;
+        padding-left:10px;
+    }
+    & textarea{
+        min-height: 130px;
+        background-color: #E5E5E5;
+        border-radius: 5px;
+        border: 1px solid #E5E5E5;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        font-size: 18px;
+        padding:10px;
+    }
+    & button {
+        width: 180px;
+        min-height: 60px;
+        background-color: #C20101;
+        border-radius: 5px;
+        border: none;
+        color:#fff;
+        margin-top: 50px;
+    }
+    & button:disabled{
+        background-color: #E5E5E5;
+    }
+    & button:active{
+        background-color: #C20101;
+    }
+    & input[type='checkbox'] {
+        display:none;
+           }
+    
+    & .checkbox_required {
+       position: relative;
+       margin-left: 30px;
+       margin-top: 20px;
+        & span {
+            color:#C30101;
+        }
+    }
+    & .checkbox_required::before {
+        position: absolute;
+        content: '';
+        width:25px;
+        height: 25px;
+        top:-25%;
+        left:-30px;
+        background-color:#E5E5E5;
+        border-radius: 5px;
+    }
+    & .error_message{
+        height: 15px;
+        color:#C20101;
+        margin-bottom: 30px;
+    }
+  & input:invalid{
+    border-color:#C20101;
+  }
+  & input:valid{
+    border-color:#2980E7;
+   
+  }
+  & input:focus{
+    background-color:#fff;
+    outline: none;
+  }
+}
+

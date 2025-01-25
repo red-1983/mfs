@@ -1,0 +1,16 @@
+.isDesktop  {
+    width:400px;
+    height: 120px;
+ 
+   
+}
+.isTablet, .isLaptop {
+    width:350px;
+    height: 100px;
+    
+}
+.isMobile {
+    width:300px;
+    height: 90px;
+    
+}

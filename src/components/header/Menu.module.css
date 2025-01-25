@@ -1,0 +1,138 @@
+.isDesktop, .isLaptop {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    min-height: 50px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #C20101;
+    & a {
+      font-weight: 500;
+      font-size: 20px;
+      color:#fff;
+   }
+   & a:hover{
+     color:#000;
+   }
+
+       
+  }
+  .isTablet, .close.isTablet {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right:-40%;
+    align-items: center;
+    background-color: #fff;
+    width: 40%;
+    z-index: 3;
+  
+    & a {
+      position:relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      min-height: 70px;
+      
+    
+      }
+    & a::before{
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 1px;
+        background-color: #615f5f49;
+        bottom: 0;
+        left:calc(50% - 100px);
+     
+    }
+      animation-name: openMenu;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+  }
+
+  @keyframes openMenu{
+    to{
+      right: 0px;
+    }
+  }
+
+
+  .close.isTablet{
+    right:0px;
+    animation-name: closeMenu;
+    
+  }
+  
+   
+    @keyframes closeMenu{
+      from{
+        right: 0px;
+      }
+      to{
+        right: -40%;
+      }
+    }
+
+    .isMobile,.close.isMobile {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color:#FFA1A1;
+      right:-100%;
+      align-items: center;
+      background-color: #ffffff;
+      width: 100%;
+      z-index: 3;
+      & a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        min-height: 70px;
+        
+    
+       
+      }
+      & a::before{
+        position: absolute;
+        content: "";
+        width: 60%;
+        height: 1px;
+        background-color: #615f5f49;
+        bottom: 0;
+        left: calc(50% - 30%);
+      }
+        animation-name: openMenu1;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+  
+    @keyframes openMenu1{
+      to{
+        right: 0px;
+      }
+    }
+
+    .close.isMobile{
+      right:0px;
+      animation-name: closeMenu1;
+      
+    }
+    
+     
+      @keyframes closeMenu1{
+        from{
+          right: 0px;
+        }
+        to{
+          right: -100%;
+        }
+      }
+
+.footer_menu{
+  padding-top: 30px;
+}
