@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/mfs/static/css/main.60f27b94.css",
+    "main.js": "/mfs/static/js/main.e3815839.js",
+    "static/media/x3000.jpg": "/mfs/static/media/x3000.7cba98b25316083c7552.jpg",
+    "static/media/x3001.jpg": "/mfs/static/media/x3001.7cba98b25316083c7552.jpg",
+    "static/media/Roboto-Regular.ttf": "/mfs/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Regular.woff": "/mfs/static/media/Roboto-Regular.d535d388dc916299d083.woff",
+    "static/media/skillnet_logo.svg": "/mfs/static/media/skillnet_logo.7d714484e680cd8ec12aacc4fe9ade10.svg",
+    "static/media/logo_large.webp": "/mfs/static/media/logo_large.7630e79dde238f3a6192.webp",
+    "static/media/logo_medium.webp": "/mfs/static/media/logo_medium.d225b0029ad9326dfed1.webp",
+    "static/media/logo_small.webp": "/mfs/static/media/logo_small.416fc8059e9f56ed90f1.webp",
+    "static/media/slick.svg": "/mfs/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/mfs/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/mfs/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/mfs/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/mts-logo.svg": "/mfs/static/media/mts-logo.9c9b29cbe2c50eab824767cafbac4d73.svg",
+    "index.html": "/mfs/index.html",
+    "static/media/a1.webp": "/mfs/static/media/a1.b4b65784e306b410719c.webp",
+    "main.60f27b94.css.map": "/mfs/static/css/main.60f27b94.css.map",
+    "main.e3815839.js.map": "/mfs/static/js/main.e3815839.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60f27b94.css",
+    "static/js/main.e3815839.js"
+  ]
+}
